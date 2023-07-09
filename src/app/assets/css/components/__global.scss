@@ -1,0 +1,26 @@
+html {
+    -webkit-text-size-adjust: none;
+    height: 100%;
+    scroll-behavior: smooth;
+    body {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 100%;
+        vertical-align: baseline;
+        text-decoration: none;
+        outline: none;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        overflow: hidden;
+        #root {
+            height: 100%;
+        }
+        div {
+            height: 100%;
+        }
+    }
+}

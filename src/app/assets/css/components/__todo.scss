@@ -1,0 +1,99 @@
+body {
+    .to-do-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .container {
+            width: 100%;
+            max-width: 1199px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            .inner-wrapper {
+                overflow-y: scroll;
+                height: 100%;
+                padding: 20px;
+                background-color: #ffffff;
+                .loader {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #f5df4e;
+                }
+                .navbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: auto;
+                    button {
+                        cursor: pointer;
+                    }
+                }
+                .to-do {
+                    height: auto;
+                    background-color: #f5df4e;
+                    border-radius: 12px;
+                    margin-bottom: 12px;
+                    padding: 20px;
+                    word-break: break-all;
+                    h3 {
+                        margin: 12px 0px;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+                    div {
+                        height: auto;
+                        p {
+                            margin: 12px 0px;
+                        }
+                        .actions-wrapper {
+                            button {
+                                padding: 10px;
+                                margin-right: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    input, textarea {
+                        width: 100%;
+                        padding: 15px;
+                        max-width: -webkit-fill-available;
+                        margin-bottom: 20px;
+                        resize: vertical;
+                    }
+
+                }
+                .pagination {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 40px 20px;
+                    height: auto;
+                    li {
+                        list-style: none;
+                        margin-right: 15px;
+                        padding: 20px;
+                        cursor: pointer;
+                        border: 2px solid #000000;
+                        transition: all 0.3s ease-in-out;
+                        margin-bottom: 20px;
+                        @media only screen and (max-width: 767px) {
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            padding: 10px;
+                        }
+                    }
+                    .current {
+                        background-color: #f5df4e;
+                    }
+                    :hover {
+                        background-color: #f5df4e;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
